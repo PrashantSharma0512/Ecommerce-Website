@@ -15,8 +15,6 @@ function HeaderLower() {
 
     return (<>
         
-        
-        {/* ///chat gpt */}
         <nav className='w-full h-14 shadow-lg border-t-2 border-gray-400 max-sm:h-0 '>
             <ul  className={`lg:flex lg:justify-around pt-4 items-center overflow-hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                 <li>
@@ -59,7 +57,7 @@ function HeaderLower() {
                                 <NavLink to="/gifts/for-her" className="block py-2 hover:bg-blue-800 hover:text-white"> Logo</NavLink>
                             </li>
                            
-                            <Navlink /> {/*is pe kaam karna baki h abhi ---> this is a component called navlist*/} 
+                            {/* <Navlink /> is pe kaam karna baki h abhi ---> this is a component called navlist  */}
 
                             {/* Add more submenu items as needed */}
                         </ul>
@@ -91,7 +89,7 @@ function HeaderLower() {
                             <li>
                                 <NavLink to="/gifts/for-him" className="block py-2 hover:bg-blue-800 hover:text-white">For Him</NavLink>
                             </li>
-                            <Navlink /> 
+                            {/* <Navlink />  */}
                             {/* Add more submenu items as needed */}
                         </ul>
                     )}
