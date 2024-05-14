@@ -9,6 +9,9 @@ import Menu from './component/menus/Menu'
 import about from './component/About/About'
 import About from './component/About/About'
 import ProductPage from './component/ProductPage/ProductPage'
+import { Children } from 'react'
+import Home from './component/Home/Home'
+import ProductListing from './component/ProductPage/ProductListing'
 function App() {
   const images = [
     'https://images.pexels.com/photos/20598967/pexels-photo-20598967/free-photo-of-descarga-electrica.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -17,21 +20,24 @@ function App() {
   ];
   
 
+
   return (
     <>
     
-      <BrowserRouter>
-        <Header/>
-        <Outlet/> 
-        <SliderBar/>
-        <SlideMenu/>
+      {/* <BrowserRouter> */}
+        {/* <Header/>
+        <Outlet/>  */}
+        <ProductListing/>
+        {/* <Home/> */}
+        {/* <SliderBar/> */}
+        {/* <SlideMenu/> */}
          {/* <Contact/>
         <About/> */}
-        <ProductPage/>
-        <Footter/>   
+        {/* <ProductPage/> */}
+        {/* <Footter/>    */}
        
       
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
 
     </>
   )

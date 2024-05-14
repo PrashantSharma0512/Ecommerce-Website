@@ -7,7 +7,7 @@ function Contact() {
                 <img src={contactBg} alt="" />
             </div>
             <div className='gap-6 flex flex-col w-screen mt-4 bg-transparent'>
-                <h1 className=' text-3xl w-full text-center text-pretty text-zinc-800-700 underline'>Contact Page</h1>
+                <h1 className=' w-full text-center text-pretty text-zinc-800 text-4xl font-bold mb-8'>Contact Page</h1>
 
 
                 <div className='w-full  flex justify-end items-center pr-16'>
