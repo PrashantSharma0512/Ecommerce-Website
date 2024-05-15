@@ -40,7 +40,7 @@ function DrawerIcon() {
           <DrawerBody>
             <nav className="absolute top-[11.2rem] left-0 bg-white w-1/5 h-[100vh] border border-black">
               <ul className="list-none flex flex-col justify-center items-center gap-3">
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600 }">Home
+                <li><Link to='' className="text-2xl text-gray-800 hover:text-blue-600 }">Home
                 <select name="" id="" className='hidden group'>
                 <option>chacha</option>
                 <option>chacha</option>
@@ -48,14 +48,14 @@ function DrawerIcon() {
                 <option>chacha</option>
                 </select>
                 </Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">About</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Gifts</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Remedies</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Shop</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Healing Stone</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Training</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Our Services</Link></li>
-                <li><Link href="#" className="text-2xl text-gray-800 hover:text-blue-600">Contact Us</Link></li>
+                <li><Link to='/about' className="text-2xl text-gray-800 hover:text-blue-600">About</Link></li>
+                <li><Link to='/gifts' className="text-2xl text-gray-800 hover:text-blue-600">Gifts</Link></li>
+                <li><Link to='/remedies' className="text-2xl text-gray-800 hover:text-blue-600">Remedies</Link></li>
+                <li><Link to='/shop' className="text-2xl text-gray-800 hover:text-blue-600">Shop</Link></li>
+                <li><Link to='/healingStone' className="text-2xl text-gray-800 hover:text-blue-600">Healing Stone</Link></li>
+                <li><Link to='/training' className="text-2xl text-gray-800 hover:text-blue-600">Training</Link></li>
+                <li><Link to='/ourService' className="text-2xl text-gray-800 hover:text-blue-600">Our Services</Link></li>
+                <li><Link to='/contact' className="text-2xl text-gray-800 hover:text-blue-600">Contact Us</Link></li>
               </ul>
             </nav>
           </DrawerBody>

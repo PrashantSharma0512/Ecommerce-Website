@@ -9,6 +9,7 @@ import About from './component/About/About'
 import Contact from './component/contact/Contact'
 import Home from './component/Home/Home'
 import ProductPage from './component/ProductPage/ProductPage'
+import Error from './component/error/Error'
 const router = createBrowserRouter([{
   path: '/',
   element: <App />,
@@ -24,16 +25,21 @@ const router = createBrowserRouter([{
     {
       path: '/contact',
       element: <Contact />
-    }, {
-      path: '/gifts',
-      element: <ProductPage />,
-      children: [
-        {
-          path: '/gifts/hername',
-          element: <About />,
-        }
-      ]
-    }
+    },
+    {
+      path: '*',
+      element: <Error/>
+    },
+    //  {
+    //   path: '/gifts',
+    //   element: <ProductPage />,
+    //   children: [
+    //     {
+    //       path: '/gifts/hername',
+    //       element: <About />,
+    //     }
+    //   ]
+    // }
   ]
 
 }])
