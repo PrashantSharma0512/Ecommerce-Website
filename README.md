@@ -14,6 +14,7 @@ This is an e-commerce website built using React and styled with Tailwind CSS. Th
 
 - **React**: A JavaScript library for building user interfaces.
 - **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Vite**: A fast build tool and development server.s
 - **React Router**: For navigation between pages.
 - **Axios**: For making HTTP requests.
 - **Context API**: For state management
