@@ -1,15 +1,7 @@
-import { useState } from 'react'
-import { BrowserRouter,Outlet } from 'react-router-dom'
+import {Outlet} from 'react-router-dom'
 import Header from './component/Header/Header'
-import Contact from './component/contact/Contact'
-import SliderBar from './component/Slider/SliderBar'
 import Footter from './component/Footer/Footter'
-import SlideMenu from './component/menus/SlideMenu'
-import Menu from './component/menus/Menu'
-import about from './component/About/About'
-import About from './component/About/About'
-import ProductPage from './component/ProductPage/ProductPage'
-import Error from './component/error/Error'
+import ProductPage from './component/ProductPage/ProductPage';
 function App() {
   const images = [
     'https://images.pexels.com/photos/20598967/pexels-photo-20598967/free-photo-of-descarga-electrica.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -23,7 +15,8 @@ function App() {
     <>
         <Header/>
         <Outlet/> 
-        <Footter/>   
+        <Footter/>  
+        {/* <ProductPage/>  */}
     </>
   )
 }

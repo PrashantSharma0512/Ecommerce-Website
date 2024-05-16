@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import HeaderUpper from './component/Header/HeaderUpper'
 import './index.css'
-import HeaderLower from './component/Header/HeaderLower'
-import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import About from './component/About/About'
 import Contact from './component/contact/Contact'
@@ -27,19 +25,23 @@ const router = createBrowserRouter([{
       element: <Contact />
     },
     {
+      path: '/gift',
+      element:  <ProductPage />,
+    },
+    {
       path: '*',
       element: <Error/>
     },
-    //  {
-    //   path: '/gifts',
-    //   element: <ProductPage />,
-    //   children: [
-    //     {
-    //       path: '/gifts/hername',
-    //       element: <About />,
-    //     }
-    //   ]
-    // }
+     {
+      path: '/gifts',
+      element: <ProductPage />,
+      // children: [
+      //   // {
+      //   //   path: '/gifts/for-her',
+      //   //   element: <About />,
+      //   // }
+      // ]
+    }
   ]
 
 }])

@@ -6,7 +6,7 @@ function Menu({name,descp,img,onClick}) {
       <h3 className="text-green-600 font-bold mt-2">{name}</h3>
       <p className="text-gray-600 overflow-hidden">{descp}</p>
       {/* <p className="text-green-600 font-bold mt-2">{name}</p> */}
-      <button className="bg-orange-500 text-white px-4 py-2 mt-2 rounded-md hover:bg-orange-600 absolute bottom-4 left-3"
+      <button className="bg-blue-800 text-white px-4 py-2 mt-2 rounded-md hover:bg-blue-600 absolute bottom-4 left-3"
       onClick={onClick}
       >
         Buy Now
