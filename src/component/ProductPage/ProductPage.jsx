@@ -1,8 +1,12 @@
 import React from 'react'
 import Menu from '../menus/Menu'
-import cart from '../assets/cart.svg'
-import net from '../assets/netflix.svg'
+import Typography from '@mui/material/Typography';
+import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import SideProductRange from './SideProductRange';
+import Stack from '@mui/material/Stack';
 function ProductPage() {
   const imgArray = [
     'https://images.pexels.com/photos/1632242/pexels-photo-1632242.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -29,41 +33,68 @@ function ProductPage() {
     'Product6',
     'Product7',
   ];
+  const [page, setPage] = React.useState(1);
+  const handleChange = (event, value) => {
+    setPage(value);
+  };
   return (
     <div >
-      <div className='w-full p-8 flex justify-center border border-zinc-200 shadow-lg mb-6'><h1 className='text-3xl text-blue-800 '>Gifting Product</h1></div>
+      {/* heading div */}
+      <div className='w-full p-8 flex justify-center border border-zinc-200 shadow-lg mb-6'>
+        <h1 className='text-3xl text-blue-800 '>Gifting Product</h1>
+      </div>
       <div className='flex'>
-      <div className=' w-1/4 '>
-        <SideProductRange/>
-      </div>
-      <div className='w-3/4 '>
-        <div className='overflow-x-scroll w-full'>
-          <div className='flex justify-center items-center gap-7 flex-wrap'>
-            <Menu name={name[0]} descp={desc[0]} img={imgArray[0]} />
-            <Menu name={name[1]} descp={desc[1]} img={imgArray[1]} />
-            <Menu name={name[2]} descp={desc[2]} img={imgArray[2]} />
-            <Menu name={name[3]} descp={desc[3]} img={imgArray[3]} />
-            <Menu name={name[4]} descp={desc[4]} img={imgArray[4]} />
-            <Menu name={name[5]} descp={desc[5]} img={imgArray[5]} />
-            <Menu name={name[6]} descp={desc[3]} img={imgArray[2]} />
-            <Menu name={name[0]} descp={desc[0]} img={imgArray[0]} />
-            <Menu name={name[1]} descp={desc[2]} img={imgArray[1]} />
-            <Menu name={name[2]} descp={desc[1]} img={imgArray[2]} />
-            <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
-            <Menu name={name[4]} descp={desc[1]} img={imgArray[1]} />
-            <Menu name={name[5]} descp={desc[2]} img={imgArray[2]} />
-            <Menu name={name[6]} descp={desc[3]} img={imgArray[3]} />
-            <Menu name={name[0]} descp={desc[4]} img={imgArray[4]} />
-            <Menu name={name[1]} descp={desc[5]} img={imgArray[5]} />
-            <Menu name={name[2]} descp={desc[3]} img={imgArray[2]} />
-            <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
-            <Menu name={name[4]} descp={desc[2]} img={imgArray[1]} />
-            <Menu name={name[5]} descp={desc[1]} img={imgArray[2]} />
-          </div >
-
+        {/* filter div */}
+        <div className=' w-1/4 '>
+          <SideProductRange />
         </div>
+
+        {/* Product Div */}
+        <div className='w-3/4 '>
+          <div className='overflow-x-scroll w-full'>
+            <div className='flex justify-center items-center gap-7 flex-wrap'>
+              <Menu name={name[0]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[1]} descp={desc[1]} img={imgArray[1]} />
+              <Menu name={name[2]} descp={desc[2]} img={imgArray[2]} />
+              <Menu name={name[3]} descp={desc[3]} img={imgArray[3]} />
+              <Menu name={name[4]} descp={desc[4]} img={imgArray[4]} />
+              <Menu name={name[5]} descp={desc[5]} img={imgArray[5]} />
+              <Menu name={name[6]} descp={desc[3]} img={imgArray[2]} />
+              <Menu name={name[0]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[1]} descp={desc[2]} img={imgArray[1]} />
+              <Menu name={name[2]} descp={desc[1]} img={imgArray[2]} />
+              <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[4]} descp={desc[1]} img={imgArray[1]} />
+              <Menu name={name[5]} descp={desc[2]} img={imgArray[2]} />
+              <Menu name={name[6]} descp={desc[3]} img={imgArray[3]} />
+              <Menu name={name[0]} descp={desc[4]} img={imgArray[4]} />
+              <Menu name={name[1]} descp={desc[5]} img={imgArray[5]} />
+              <Menu name={name[2]} descp={desc[3]} img={imgArray[2]} />
+              <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[4]} descp={desc[2]} img={imgArray[1]} />
+              <Menu name={name[5]} descp={desc[1]} img={imgArray[2]} />
+            </div >
+
+          </div>
+        </div>
+        
       </div>
-    </div>
+      {/* pagination div */}
+      <div className='flex justify-center w-full '>
+      <Stack spacing={1}>
+      <Typography>Page: {page}</Typography>
+      <Pagination
+        count={30}
+        variant="outlined" shape="rounded" color='primary'page={page} onChange={handleChange} boundaryCount={5} 
+        renderItem={(item) => (
+          <PaginationItem
+            slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+            {...item}
+          />
+        )}
+      />
+    </Stack>
+        </div>
     </div>
   )
 }

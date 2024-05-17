@@ -18,13 +18,15 @@ This is an e-commerce website built using React and styled with Tailwind CSS. Th
 - **React Router**: For navigation between pages.
 - **Axios**: For making HTTP requests.
 - **Context API**: For state management
+- **Chakra UI**: For component
+- **Material UI**: For component
 
 
 ## Installation
 
 To get started with the project, follow these steps:
 
-1. **Clone the repository:**
+1. **Clone the repository:**                                                                                                     
 git clone https://github.com/PrashantSharma0512/Ecommerce-Website.git                                                                
 cd ecommerce-website
 

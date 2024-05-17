@@ -34,20 +34,38 @@ function SideProductRange() {
             <br />
             <br />
             <br />
-            {/* checkbox */}
+            {/* <-----checkbox------> */}
+
+            
+            {/* filter by category */}
             <div className=''>
+                <h1 className='text-3xl text-blue-800 mb-4 font-medium'>Category</h1>
                 <ul>
-                    <li><Checkbox {...label} defaultChecked />Product1</li>
-                    <li><Checkbox {...label} defaultChecked />Product2</li>
-                    <li><Checkbox {...label} defaultChecked />Product3</li>
-                    <li><Checkbox {...label} defaultChecked />Product4</li>
-                    <li><Checkbox {...label} defaultChecked />Product5</li>
-                    <li><Checkbox {...label} defaultChecked />Product6</li>
-                    <li><Checkbox {...label} defaultChecked />Product7</li>
-                    <li><Checkbox {...label} defaultChecked />Product8</li>
+                    <li><Checkbox {...label}  />Product1</li>
+                    <li><Checkbox {...label}  />Product2</li>
+                    <li><Checkbox {...label}  />Product3</li>
+                    <li><Checkbox {...label}  />Product4</li>
+                    <li><Checkbox {...label}  />Product5</li>
+                    <li><Checkbox {...label}  />Product6</li>
+                    <li><Checkbox {...label}  />Product7</li>
+                    <li><Checkbox {...label}  />Product8</li>
                 </ul>
             </div>
-
+            {/* color */}
+            <div className=''>
+                <h1 className='text-3xl text-blue-800 mb-4 font-medium'>Category</h1>
+                <ul>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Blue</li>
+                </ul>
+            </div>
+            
         </div>
     )
 }
