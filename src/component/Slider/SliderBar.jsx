@@ -51,7 +51,7 @@ function SliderBar() {
     return () => clearInterval(interval);
   }, [autoSlide, currentIndex, photo.length]);
   return (
-    <div className=' max-md:h-[25vh] max-w-full h-[500px]  relative w-full group snap-x bg-zinc-500'>
+    <div className=' max-md:h-[25vh] max-w-full h-[500px]  relative w-full group snap-x bg-zinc-400'>
       <div  style={{backgroundImage:`url(${photo[currentIndex].url})`}} className='w-full h-full bg-center bg-contain bg-no-repeat duration-500 ease-in-out  '></div>
       {/* left arrow */}
       <GoChevronLeft  className='max-sm:text-lg text-4xl max-sm:hidden hidden group-hover:block absolute top-1/2 translate-x-0 -translate-y-1/2 left-5 bg-slate-400 rounded-full cursor-pointer' onClick={prevSlide}/>

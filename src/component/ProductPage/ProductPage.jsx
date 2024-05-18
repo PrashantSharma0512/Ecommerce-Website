@@ -46,7 +46,7 @@ function ProductPage() {
       <div className='flex'>
         {/* filter div */}
         <div className=' w-1/4 '>
-          <SideProductRange />
+          <SideProductRange  className='sticky'/>
         </div>
 
         {/* Product Div */}

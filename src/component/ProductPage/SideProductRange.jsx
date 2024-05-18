@@ -15,8 +15,9 @@ function SideProductRange() {
     };
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
     return (
-        <div className='p-6 shadow-blue-600 shadow-lg'>
+        <div className='p-6 shadow-blue-600 shadow-lg sticky'>
             <h2 className='text-center  text-3xl '>Fill by Price</h2>
+            {/* fliter slider */}
             <Slider
                 min={1}
                 max={10000}
@@ -25,6 +26,7 @@ function SideProductRange() {
                 value={value}
                 onChange={handleChange}
                 valueLabelDisplay="auto"
+                color='secondary'
                 getAriaValueText={valuetext}
             />
             <div className='flex'>
@@ -53,16 +55,16 @@ function SideProductRange() {
             </div>
             {/* color */}
             <div className=''>
-                <h1 className='text-3xl text-blue-800 mb-4 font-medium'>Category</h1>
+                <h1 className='text-3xl text-blue-800 mb-4 font-medium'>Color</h1>
                 <ul>
                     <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
-                    <li><Checkbox {...label} />Blue</li>
+                    <li><Checkbox {...label} />Red</li>
+                    <li><Checkbox {...label} />Black</li>
+                    <li><Checkbox {...label} />Orange</li>
+                    <li><Checkbox {...label} />Crimson</li>
+                    <li><Checkbox {...label} />pta nhi</li>
+                    <li><Checkbox {...label} />Aur ek color</li>
+                    <li><Checkbox {...label} />Apne Se Mann Lo</li>
                 </ul>
             </div>
             
