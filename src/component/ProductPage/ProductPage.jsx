@@ -72,6 +72,14 @@ function ProductPage() {
               <Menu name={name[2]} descp={desc[3]} img={imgArray[2]} />
               <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
               <Menu name={name[4]} descp={desc[2]} img={imgArray[1]} />
+              <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[4]} descp={desc[2]} img={imgArray[1]} />
+              <Menu name={name[5]} descp={desc[1]} img={imgArray[2]} />
+              <Menu name={name[0]} descp={desc[4]} img={imgArray[4]} />
+              <Menu name={name[1]} descp={desc[5]} img={imgArray[5]} />
+              <Menu name={name[2]} descp={desc[3]} img={imgArray[2]} />
+              <Menu name={name[3]} descp={desc[0]} img={imgArray[0]} />
+              <Menu name={name[4]} descp={desc[2]} img={imgArray[1]} />
               <Menu name={name[5]} descp={desc[1]} img={imgArray[2]} />
             </div >
 

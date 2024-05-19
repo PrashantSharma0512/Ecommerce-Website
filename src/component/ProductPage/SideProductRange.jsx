@@ -67,6 +67,20 @@ function SideProductRange() {
                     <li><Checkbox {...label} />Apne Se Mann Lo</li>
                 </ul>
             </div>
+            {/* Treading */}
+            <div className=''>
+                <h1 className='text-3xl text-blue-800 mb-4 font-medium'>Treading</h1>
+                <ul>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                    <li><Checkbox {...label} />Treading Product </li>
+                </ul>
+            </div>
             
         </div>
     )
