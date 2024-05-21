@@ -4,6 +4,7 @@ import Footter from './component/Footer/Footter'
 
 import LoginPage from './component/LoginPage/LoginPage';
 import SignUp from './component/LoginPage/SignUp';
+import Carousel from './component/Slider/Carousel';
 
 function App() {
   const images = [
