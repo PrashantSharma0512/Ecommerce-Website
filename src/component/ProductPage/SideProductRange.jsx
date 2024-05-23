@@ -15,9 +15,10 @@ function SideProductRange() {
     };
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
     return (
-        <div className='p-6 shadow-blue-600 shadow-lg sticky'>
+        <div className='p-6 shadow-blue-600 shadow-lg sticky '>
             <h2 className='text-center  text-3xl '>Fill by Price</h2>
             {/* fliter slider */}
+            <div className='flex gap-4'>
             <Slider
                 min={1}
                 max={10000}
@@ -29,9 +30,12 @@ function SideProductRange() {
                 color='secondary'
                 getAriaValueText={valuetext}
             />
+            <button type="submit" className='border border-zinc-500 p-2 rounded '>Go</button>
+            </div>
             <div className='flex'>
-                <span className='m-auto flex'>FROM: ₹{value[0]}</span>
-                <span className='m-auto flex'>FROM: ₹{value[1]}</span>
+                <h1>Price:   </h1>
+                <span className=' flex'>₹{value[0]}-</span>
+                <span className=' flex'> ₹{value[1]}</span>
             </div>
             <br />
             <br />
