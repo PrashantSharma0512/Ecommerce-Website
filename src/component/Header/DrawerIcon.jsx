@@ -41,12 +41,6 @@ function DrawerIcon() {
             <nav className="absolute top-[11.2rem] left-0 bg-white w-1/5 h-[100vh] border border-black">
               <ul className="list-none flex flex-col justify-center items-center gap-3">
                 <li><Link to='' className="text-2xl text-gray-800 hover:text-blue-600 }">Home
-                <select name="" id="" className='hidden group'>
-                <option>chacha</option>
-                <option>chacha</option>
-                <option>chacha</option>
-                <option>chacha</option>
-                </select>
                 </Link></li>
                 <li><Link to='/about' className="text-2xl text-gray-800 hover:text-blue-600">About</Link></li>
                 <li><Link to='/gifts' className="text-2xl text-gray-800 hover:text-blue-600">Gifts</Link></li>
@@ -63,6 +57,7 @@ function DrawerIcon() {
           <DrawerFooter>
             <Button variant='outline' mr={3} onClick={onClose}>
               <RxCross1 size={40} color='black' className='absolute right-[77.3vw] top-[11.2rem] bg-white border border-black max-sm:top-[4rem] max-sm:right-[10.3rem]  ' />
+              <div className='bg-red-900 rounded-lg w-36 p-1 absolute right-[84.3vw] top-[37rem] text-2xl text-white'>close</div>
             </Button>
             {/* <Button colorScheme='blue'>Save</Button>  */}
           </DrawerFooter>
