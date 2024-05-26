@@ -1,6 +1,7 @@
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Header from './component/Header/Header'
 import Footter from './component/Footer/Footter'
+import ProductSlider from './component/Slider/ProductSlider';
 
 
 function App() {
@@ -9,17 +10,18 @@ function App() {
     'https://images.pexels.com/photos/12530868/pexels-photo-12530868.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
     'https://via.placeholder.com/600x300/0000ff/ffffff',
   ];
-  
+
 
 
   return (
     <>
-        <Header/>
-        <Outlet/> 
-        <Footter/>  
-       {/* <LoginPage/> */}
-       {/* <SignUp/> */}
-        {/* <ProductPage/>  */}
+      <Header />
+      <Outlet />
+      <Footter />
+      <ProductSlider />
+      {/* <LoginPage/> */}
+      {/* <SignUp/> */}
+      {/* <ProductPage/>  */}
     </>
   )
 }

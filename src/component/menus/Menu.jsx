@@ -1,13 +1,14 @@
 import React from 'react'
-function Menu({name,descp,img,onClick}) {
+function Menu({ name, descp, img, onClick, price }) {
   return (
-   <div className="bg-white border border-zinc-400  rounded-lg shadow-md p-4 w-64 h-72 relative ">
-      <img src={img}  className="w-full h-1/2 rounded-md bg-contain hover:scale-110 hover:shadow-zinc-700 hover:shadow-xl " />
+    <div className="bg-white border border-zinc-400  rounded-lg shadow-md p-4 w-64 h-72 relative ">
+      <img src={img} className="w-full h-1/2 rounded-md bg-contain hover:scale-110 hover:shadow-zinc-700 hover:shadow-xl " />
       <h3 className="text-green-600 font-bold mt-2">{name}</h3>
       <p className="text-gray-600 overflow-hidden">{descp}</p>
+      <p className="text-blue-950 overflow-hidden">₹{price}</p>
       {/* <p className="text-green-600 font-bold mt-2">{name}</p> */}
-      <button className="bg-blue-800 text-white px-4 py-2 mt-2 rounded-md hover:bg-blue-600 absolute bottom-4 left-3"
-      onClick={onClick}
+      <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-md hover:bg-blue-600 absolute bottom-4 left-3"
+        onClick={onClick}
       >
         Buy Now
       </button>

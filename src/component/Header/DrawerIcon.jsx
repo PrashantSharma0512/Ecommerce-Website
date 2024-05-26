@@ -57,7 +57,7 @@ function DrawerIcon() {
           <DrawerFooter>
             <Button variant='outline' mr={3} onClick={onClose}>
               <RxCross1 size={40} color='black' className='absolute right-[77.3vw] top-[11.2rem] bg-white border border-black max-sm:top-[4rem] max-sm:right-[10.3rem]  ' />
-              <div className='bg-red-900 rounded-lg w-36 p-1 absolute right-[84.3vw] top-[37rem] text-2xl text-white'>close</div>
+              <div className='bg-red-900 rounded-lg w-36 p-1 absolute right-[84.3vw] top-[42rem] text-2xl text-white'>close</div>
             </Button>
             {/* <Button colorScheme='blue'>Save</Button>  */}
           </DrawerFooter>
