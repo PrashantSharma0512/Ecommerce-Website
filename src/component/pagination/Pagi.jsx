@@ -6,16 +6,12 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Stack from '@mui/material/Stack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function Pagi() {
-
-
-
-
     const [page, setPage] = React.useState(1);
     const handleChange = (event, value) => {
         setPage(value);
     };
     return (
-        < div className='flex justify-center w-full ' >
+        < div className='flex justify-center w-full  ' >
             <Stack spacing={1}>
                 <Typography>Page: {page}</Typography>
                 <Pagination

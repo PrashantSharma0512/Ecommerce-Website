@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom'
 import Header from './component/Header/Header'
 import Footter from './component/Footer/Footter'
-import ProductSlider from './component/Slider/ProductSlider';
+import DetailedPage from './component/ProductPage/DetailedPage';
+// import ProductSlider from './component/Slider/ProductSlider';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       <Header />
       <Outlet />
       <Footter />
-      <ProductSlider />
+      <div><DetailedPage/></div>
+      {/* <ProductSlider /> */}
       {/* <LoginPage/> */}
       {/* <SignUp/> */}
       {/* <ProductPage/>  */}

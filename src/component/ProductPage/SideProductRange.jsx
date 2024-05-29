@@ -35,7 +35,7 @@ function SideProductRange() {
             <div className='flex'>
                 <h1>Price:   </h1>
                 <span className=' flex'>₹{value[0]}-</span>
-                <span className=' flex'> ₹{value[1]}</span>
+                <span className=' flex'>₹{value[1]}</span>
             </div>
             <br />
             <br />
