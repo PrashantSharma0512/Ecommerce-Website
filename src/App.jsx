@@ -19,11 +19,12 @@ function App() {
       <Header />
       <Outlet />
       <Footter />
-      <div><DetailedPage/></div>
+      {/* <div><DetailedPage/></div> */}
       {/* <ProductSlider /> */}
-      {/* <LoginPage/> */}
-      {/* <SignUp/> */}
+      {/* <LoginPage/>
+      <SignUp/> */}
       {/* <ProductPage/>  */}
+      {/* <DetailedPage/> */}
     </>
   )
 }

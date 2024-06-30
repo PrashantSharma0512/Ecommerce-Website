@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 // import Logo from '../assets/logo.svg'
-import Logo1 from '../assets/logo1.svg'
+import Logo1 from '../assets/ppLogo.svg'
 import { RiShoppingCartFill } from "react-icons/ri";
 import { HiOutlineSearch } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
@@ -16,11 +16,11 @@ function HeaderUpper() {
 
   }
   return (
-    <div className='flex justify-between ml-24 max-sm:ml-0  p-2 max-md:flex max-md:justify-center'>
+    <div className='flex justify-between ml-24 max-sm:ml-0  p-2 max-md:flex max-md:justify-center '>
       <Link to='/' >
       <img
          src={Logo1}
-          className="w-48 max-sm:w-32"
+          className="w-48 max-sm:w-32 h-12"
           alt=""
         />
       </Link>

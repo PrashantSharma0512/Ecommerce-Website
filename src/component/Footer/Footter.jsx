@@ -215,7 +215,7 @@ const Footter = () => {
                   />
                 </svg>
 
-                <span className="flex-1 text-gray-700">john@doe.com</span>
+                <span className="flex-1 text-gray-700">prashantsharma0512@gmail.com</span>
               </a>
             </li>
 
@@ -239,7 +239,7 @@ const Footter = () => {
                   />
                 </svg>
 
-                <span className="flex-1 text-gray-700">0123456789</span>
+                <span className="flex-1 text-gray-700">8874687288</span>
               </a>
             </li>
 
@@ -267,7 +267,7 @@ const Footter = () => {
               </svg>
 
               <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                213 Lane, London, United Kingdom
+                BHU Nagwa Varanasi
               </address>
             </li>
           </ul>

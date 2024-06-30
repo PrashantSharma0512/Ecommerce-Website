@@ -29,16 +29,16 @@ function SlideMenu() {
         <h1 className='font-bold text-4xl text-blue-900 '>Trending </h1>
       </div>
       <div className='flex justify-center items-center gap-7 flex-wrap'>
-        <Menu name="GEODE11" descp={desc[0]} img={imgArray[0]} price={price[0]}/>
-        <Menu name="GEODE12" descp={desc[1]} img={imgArray[1]} price={price[1]}/>
-        <Menu name="GEODE13" descp={desc[2]} img={imgArray[2]} price={price[2]}/>
-        <Menu name="GEODE14" descp={desc[3]} img={imgArray[3]} price={price[3]}/>
-        <Menu name="GEODE15" descp={desc[4]} img={imgArray[4]} price={price[4]}/>
-        <Menu name="GEODE15" descp={desc[5]} img={imgArray[5]} price={price[0]}/>
-        <Menu name="GEODE13" descp={desc[3]} img={imgArray[2]} price={price[1]}/>
-        <Menu name="GEODE14" descp={desc[0]} img={imgArray[0]} price={price[2]}/>
-        <Menu name="GEODE15" descp={desc[2]} img={imgArray[1]} price={price[3]}/>
-        <Menu name="GEODE15" descp={desc[1]} img={imgArray[2]} price={price[4]}/>
+        <Menu name="GEODE11"  descp={desc[0]} img={imgArray[0]} price={price[0]}/>
+        <Menu name="GEODE12"  descp={desc[1]} img={imgArray[1]} price={price[1]}/>
+        <Menu name="GEODE13"  descp={desc[2]} img={imgArray[2]} price={price[2]}/>
+        <Menu name="GEODE14"  descp={desc[3]} img={imgArray[3]} price={price[3]}/>
+        <Menu name="GEODE15"  descp={desc[4]} img={imgArray[4]} price={price[4]}/>
+        <Menu name="GEODE15"  descp={desc[5]} img={imgArray[5]} price={price[0]}/>
+        <Menu name="GEODE13"  descp={desc[3]} img={imgArray[2]} price={price[1]}/>
+        <Menu name="GEODE14"  descp={desc[0]} img={imgArray[0]} price={price[2]}/>
+        <Menu name="GEODE15"  descp={desc[2]} img={imgArray[1]} price={price[3]}/>
+        <Menu name="GEODE15"  descp={desc[1]} img={imgArray[2]} price={price[4]}/>
       </div >
       
     </div>

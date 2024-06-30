@@ -8,6 +8,10 @@ import Contact from './component/contact/Contact'
 import Home from './component/Home/Home'
 import ProductPage from './component/ProductPage/ProductPage'
 import Error from './component/error/Error'
+import LoginPage from './component/LoginPage/LoginPage'
+import SignUp from './component/LoginPage/SignUp'
+
+import DetailedPage from './component/ProductPage/DetailedPage'
 const router = createBrowserRouter([{
   path: '/',
   element: <App />,
@@ -35,7 +39,18 @@ const router = createBrowserRouter([{
     {
       path: '/gifts/for-her',
       element: <ProductPage />,
-      
+    },
+    {
+      path: '/signup',
+      element: <SignUp />,
+    },
+    {
+      path: '/login',
+      element: <LoginPage/>,
+    },
+    {
+      path: '/detailedProduct',
+      element: <DetailedPage/>,
     }
   ]
 

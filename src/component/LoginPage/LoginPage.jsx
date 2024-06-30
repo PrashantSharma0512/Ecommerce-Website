@@ -8,6 +8,8 @@ import FormLabel from '@mui/joy/FormLabel';
 import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button';
 import Link from '@mui/joy/Link';
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { HiLightBulb } from "react-icons/hi";
 
 
 // import * as React from 'react';
@@ -35,7 +37,7 @@ function ModeToggle() {
                 setMode(mode === 'light' ? 'dark' : 'light');
             }}
         >
-            {mode === 'light' ? 'Turn dark' : 'Turn light'}
+            {mode === 'light' ? <HiOutlineLightBulb /> : <HiLightBulb />}
         </Button>
     );
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 import arrow from '../assets/arrow.svg'
-import Navlink from './Linkslist';
 import { GiHamburgerMenu } from "react-icons/gi";
 function HeaderLower() {
     const [isGiftsMenuOpen, setIsGiftsMenuOpen] = useState(false);
@@ -16,7 +15,7 @@ function HeaderLower() {
     return (<>
         
         <nav className='w-full h-14 shadow-lg border-t-2 border-gray-400 max-sm:h-0 '>
-            <ul  className={`lg:flex lg:justify-around pt-4 items-center overflow-hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+            <ul  className={`lg:flex lg:justify-around pt-4 items-center dark:bg-black overflow-hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                 <li>
                     <NavLink
                         to="/"
@@ -54,10 +53,8 @@ function HeaderLower() {
                     {isGiftsMenuOpen && (
                         <ul className="absolute pt-1 border border-t-blue-700 border-t-4  text-center  w-40 h-1/3    bg-white   overflow-x-hidden overflow-y-auto z-10 rounded-b-lg">
                             <li>
-                                <NavLink to="/gifts/for-her" className="block py-2 hover:bg-blue-800 hover:text-white"> Logo</NavLink>
+                                <NavLink to="/gifts/for-her" className="block py-2 hover:bg-blue-800 hover:text-white text-center">for-her</NavLink>
                             </li>
-                           
-                            {/* <Navlink /> is pe kaam karna baki h abhi ---> this is a component called navlist  */}
 
                             {/* Add more submenu items as needed */}
                         </ul>

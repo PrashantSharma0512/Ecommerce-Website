@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CiLock } from "react-icons/ci";
-import LoginPage from './LoginPage';
+
 
 
 export default function SignUp() {
@@ -20,7 +20,7 @@ export default function SignUp() {
           <div className="mx-auto h-12 w-12 rounded-full bg-zinc-300 flex items-center justify-center">
             <CiLock/>
           </div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign up</h2>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create New Account</h2>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
 import ReactImageGallery from "react-image-gallery";
@@ -53,16 +54,31 @@ const DetailedPage = () => {
   };
   const plusMinuceButton =
     "flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500";
-  return (
+    // add items and remove items function\
+    const [addItem,setAdditem] = useState(1);
+    // const [removeItem,setRemoveitem] = useState();
+    const addItems = ()=>{
+      setAdditem(addItem + 1);
+    }
+    const removeItems = ()=>{
+      addItem<1?setAdditem(addItem):setAdditem(addItem - 1);      
+    }
+    return (
     <section className="container flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10">
       {/* image gallery */}
-      <div className="container mx-auto px-4">
-        <ReactImageGallery
-          showBullets={false}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          items={productDetailItem.images}
-        />
+      <div className="w-full h-full">
+        <div className="w-full h-2/3">
+          <img src={productDetailItem.images[0].original} alt="error" />
+        </div>
+        <div className="flex h-[15vh] w-full gap-2 overflow-x-scroll">
+          <img src={productDetailItem.images[1].original} alt="error" />
+          <img src={productDetailItem.images[2].thumbnail} alt="error" />
+          <img src={productDetailItem.images[3].thumbnail} alt="error" />
+          <img src={productDetailItem.images[4].original} alt="error" />
+          <img src={productDetailItem.images[4].original} alt="error" />
+          <img src={productDetailItem.images[4].original} alt="error" />
+          <img src={productDetailItem.images[4].original} alt="error" /> 
+        </div>
 
         {/* /image gallery  */}
       </div>
@@ -105,9 +121,9 @@ const DetailedPage = () => {
           SKU: <span className="font-normal">{productDetailItem.sku}</span>
         </p>
         <p className="mt-4 text-4xl font-bold text-violet-900">
-          ${productDetailItem.price}{" "}
+        ₹{productDetailItem.price}{" "}
           <span className="text-xs text-gray-400 line-through">
-            ${productDetailItem.previousPrice}
+          ₹{productDetailItem.previousPrice}
           </span>
         </p>
         <p className="pt-5 text-sm leading-5 text-gray-500">
@@ -144,11 +160,11 @@ const DetailedPage = () => {
         <div className="mt-6">
           <p className="pb-2 text-xs text-gray-500">Quantity</p>
           <div className="flex">
-            <button className={`${plusMinuceButton}`}>−</button>
+            <button className={`${plusMinuceButton}`} onClick={removeItems}>−</button>
             <div className="flex h-8 w-8 cursor-text items-center justify-center border-t border-b active:ring-gray-500">
-              1
+              {addItem}
             </div>
-            <button className={`${plusMinuceButton}`}> +</button>
+            <button className={`${plusMinuceButton}`}onClick={addItems}> +</button>
           </div>
         </div>
         <div className="mt-7 flex flex-row items-center gap-6">
@@ -156,7 +172,7 @@ const DetailedPage = () => {
             <BiShoppingBag className="mx-2" />
             Add to cart
           </button>
-          <button className="flex h-12 w-1/3 items-center justify-center bg-amber-400 duration-100 hover:bg-yellow-300">
+          <button className="flex h-12 w-1/3 items-center justify-center bg-green-600 duration-100 hover:bg-green-400">
             <AiOutlineHeart className="mx-2" />
             Wishlist
           </button>
